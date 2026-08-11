@@ -22,6 +22,7 @@ test("server-renders Alexandra's portfolio", async () => {
   assert.match(html, /Alexandra Bumbar/);
   assert.match(html, /Frontend &amp; Full-stack Engineer/);
   assert.match(html, /Selected engineering work/);
+  assert.match(html, /Role-aware automation framework|One framework/);
   assert.match(html, /CloudGeometry/);
   assert.match(html, /ostasalexandra@gmail\.com/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/);

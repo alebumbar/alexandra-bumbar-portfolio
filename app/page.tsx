@@ -69,62 +69,70 @@ export default function Home() {
       <section className="section shell" id="work">
         <div className="section-heading">
           <p className="eyebrow">Selected engineering work</p>
-          <h2>Useful changes,<br /><em>carefully made.</em></h2>
+          <h2>Systems that make<br /><em>teams stronger.</em></h2>
           <p>
-            Recent work for an anonymised US-based advertising technology platform,
-            helping teams understand and manage digital media performance.
+            A closer look at how I improved quality engineering for an anonymised
+            US-based advertising technology platform.
           </p>
         </div>
 
-        <div className="work-list">
-          <article className="work-card">
-            <div className="work-number">01</div>
-            <div className="work-content">
-              <p className="work-type">Full-stack product feature</p>
-              <h3>Reversible product visibility</h3>
-              <p>
-                Built a hide and unhide workflow that lets users remove products from
-                the main platform view without permanently deleting their data.
-              </p>
-              <div className="work-outcome">
-                <span>Why it matters</span>
-                <p>Safer product management, preserved history and a reversible user journey.</p>
-              </div>
+        <article className="feature-case">
+          <div className="feature-story">
+            <div className="feature-meta">
+              <span>01 / Flagship case study</span>
+              <span>Quality engineering</span>
             </div>
-            <div className="work-visual visual-visibility" aria-hidden="true">
-              <div className="mini-window">
-                <div className="mini-bar" />
-                <div className="product-row"><i /><span>Active product</span><b>Visible</b></div>
-                <div className="product-row muted"><i /><span>Hidden product</span><b>Hidden</b></div>
-                <div className="product-row"><i /><span>Active product</span><b>Visible</b></div>
-              </div>
-            </div>
-          </article>
+            <p className="work-type">Framework architecture · Test infrastructure</p>
+            <h3>One framework.<br /><em>Every user perspective.</em></h3>
+            <p className="feature-lead">
+              I designed and built a role-aware automation framework that adapts test
+              users to each scenario, enabling the same feature to be validated across
+              multiple user types with a consistent setup.
+            </p>
 
-          <article className="work-card work-card-dark">
-            <div className="work-number">02</div>
-            <div className="work-content">
-              <p className="work-type">Test infrastructure</p>
-              <h3>Role-aware automation framework</h3>
-              <p>
-                Created a framework that configures test users by role, allowing
-                automated scenarios to validate features across multiple user types.
-              </p>
-              <div className="work-outcome">
-                <span>Why it matters</span>
-                <p>More representative test coverage, repeatable setup and greater confidence.</p>
+            <div className="case-breakdown">
+              <div>
+                <span>Challenge</span>
+                <p>Feature behaviour needed reliable coverage across different user roles.</p>
+              </div>
+              <div>
+                <span>System</span>
+                <p>A reusable configuration layer adjusts users to the role each test requires.</p>
+              </div>
+              <div>
+                <span>Value</span>
+                <p>Broader multi-user validation, repeatable setup and easier test extension.</p>
               </div>
             </div>
-            <div className="work-visual visual-testing" aria-hidden="true">
-              <div className="role-stack">
-                <div><span>ADMIN</span><b>✓</b></div>
-                <div><span>MANAGER</span><b>✓</b></div>
-                <div><span>VIEWER</span><b>✓</b></div>
-              </div>
-              <p>3 roles · 1 adaptable setup</p>
+
+            <div className="ownership-line">
+              <span>What I owned</span>
+              <p>Framework design · Role modelling · Test-user setup · Scenario integration</p>
             </div>
-          </article>
-        </div>
+          </div>
+
+          <div className="framework-visual" aria-label="Diagram showing one test scenario configured for three user roles">
+            <div className="visual-topline">
+              <span>ROLE ENGINE / ACTIVE</span>
+              <span>03 — 03 PASS</span>
+            </div>
+            <div className="scenario-node">
+              <small>INPUT</small>
+              <strong>Feature scenario</strong>
+              <i>01</i>
+            </div>
+            <div className="connector-line" aria-hidden="true" />
+            <div className="role-grid">
+              <div><small>ROLE 01</small><strong>Admin</strong><b>✓</b></div>
+              <div><small>ROLE 02</small><strong>Manager</strong><b>✓</b></div>
+              <div><small>ROLE 03</small><strong>Viewer</strong><b>✓</b></div>
+            </div>
+            <div className="visual-result">
+              <span>Reusable configuration</span>
+              <strong>One source of truth</strong>
+            </div>
+          </div>
+        </article>
       </section>
 
       <section className="section experience-section" id="experience">
