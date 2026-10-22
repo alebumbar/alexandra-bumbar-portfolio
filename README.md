@@ -1,6 +1,6 @@
 # Alexandra Bumbar — Portfolio
 
-Personal portfolio website for Alexandra Bumbar, a London-based frontend and
+Personal portfolio website for Alexandra Bumbar, a London-based
 full-stack engineer working with React, Vue, TypeScript, and Node.js.
 
 ## Local development
